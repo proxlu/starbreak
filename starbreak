@@ -1,5 +1,5 @@
 #!/bin/bash
-chromium --app=https://www.starbreak.com/ --class=ICE-SSB-starbreak --user-data-dir=$HOME/.local/share/ice/profiles/starbreak&
+xdotool exec chromium --app=https://www.starbreak.com/ --class=ICE-SSB-starbreak --user-data-dir=$HOME/.local/share/ice/profiles/starbreak&>/dev/null
 window=`xdotool getwindowfocus`
 while [[ $window = `xdotool getwindowfocus` ]]
 do
