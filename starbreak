@@ -1,0 +1,10 @@
+#!/bin/bash
+chromium --app=https://www.starbreak.com/ --class=ICE-SSB-starbreak --user-data-dir=/home/edu/.local/share/ice/profiles/starbreak&
+window=`xdotool getwindowfocus`
+while [[ $window = `xdotool getwindowfocus` ]]
+do
+	sleep 0
+done
+	x=`xdotool getdisplaygeometry|tr ' ' '\n'|head -1`
+	y=`xdotool getdisplaygeometry|tr ' ' '\n'|tail -1`
+	xdotool getwindowfocus windowsize --sync 1366 768 windowmove --sync $((x/2-683)) $((y/2-416))
