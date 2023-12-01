@@ -7,4 +7,4 @@ do
 done
 	x=`xdotool getdisplaygeometry|tr ' ' '\n'|head -1`
 	y=`xdotool getdisplaygeometry|tr ' ' '\n'|tail -1`
-	xdotool getwindowfocus windowsize --sync 1366 768 windowmove --sync $((x/2-683)) $((y/2-416))
+	xdotool getwindowfocus windowsize --sync 1366 768 windowmove --sync $((x/2-683)) $((y/2-432))
